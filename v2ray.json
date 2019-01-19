@@ -1,0 +1,29 @@
+{
+    "homepage": "https://www.v2ray.com/",
+    "version": "4.12.0",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/v2ray/v2ray-core/releases/download/v4.12.0/v2ray-windows-64.zip",
+            "hash": "a9ea003fb8b530af365d7de8ddd83cd7d413de929879e229e641715bf3d4d02a"
+        },
+        "32bit": {
+            "url": "https://github.com/v2ray/v2ray-core/releases/download/v4.12.0/v2ray-windows-32.zip",
+            "hash": "1dd2254a73dd4c4c45e30da617b15e3f0d3f5c77658dfe62d9443211161073a8"
+        }
+    },
+    "bin": "v2ray.exe",
+    "checkver": {
+        "github": "https://github.com/v2ray/v2ray-core"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/v2ray/v2ray-core/releases/download/v$version/v2ray-windows-64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/v2ray/v2ray-core/releases/download/v$version/v2ray-windows-32.zip"
+            }
+        }
+    }
+}
