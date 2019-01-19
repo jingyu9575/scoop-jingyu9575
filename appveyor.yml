@@ -1,0 +1,22 @@
+branches:
+  only:
+    - master
+
+skip_commits:
+  author: autoupdate@qw.thucfb.com
+
+skip_branch_with_pr: true
+
+max_jobs: 1
+
+init:
+  - git config --global user.name AutoUpdate
+  - git config --global user.email autoupdate@qw.thucfb.com
+  - git config --global credential.helper store
+  - ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+  
+install:
+  - ps: iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+
+build_script:
+  - ps: .\autoupdate.ps1 -Push -CompareBranch master
