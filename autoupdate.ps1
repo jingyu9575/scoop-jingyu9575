@@ -14,7 +14,7 @@ if ($CompareBranch) {
 	try { git checkout "$CompareBranch" } catch {}
 }
 
-& $env:USERPROFILE\scoop\apps\scoop\current\bin\checkver.ps1 -dir ./ * -u
+& $env:USERPROFILE\scoop\apps\scoop\current\bin\checkver.ps1 -dir bucket * -u
 
 git diff-index --quiet HEAD
 if (-not $LastExitCode) {
