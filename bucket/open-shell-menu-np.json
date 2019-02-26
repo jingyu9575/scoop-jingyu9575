@@ -1,0 +1,28 @@
+{
+    "homepage": "https://open-shell.github.io/Open-Shell-Menu/",
+    "version": "4.4.131",
+    "license": "MIT",
+    "url": "https://github.com/Open-Shell/Open-Shell-Menu/releases/download/v4.4.131/OpenShellSetup_4_4_131.exe#/OpenShellSetup.exe",
+    "hash": "8f8ab7035b7956f58f280a0e92ac6e5736e0ed2ff5430935c7868e243a03f9fa",
+    "installer": {
+        "args": [
+            "/qn",
+            "APPLICATIONFOLDER=\"$dir\""
+        ],
+        "keep": "true"
+    },
+    "uninstaller": {
+        "file": "OpenShellSetup.exe",
+        "args": [
+            "/x",
+            "%MSI%",
+            "/qn"
+        ]
+    },
+    "checkver": {
+        "github": "https://github.com/Open-Shell/Open-Shell-Menu"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Open-Shell/Open-Shell-Menu/releases/download/v$version/OpenShellSetup_$underscoreVersion.exe#/OpenShellSetup.exe"
+    }
+}
