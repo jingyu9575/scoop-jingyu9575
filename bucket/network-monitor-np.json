@@ -1,0 +1,27 @@
+{
+    "homepage": "https://www.microsoft.com/en-us/download/details.aspx?id=4865",
+    "version": "3.4",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "http://download.microsoft.com/download/7/1/0/7105C7FF-768E-4472-AFD5-F29108D1E383/NM34_x64.exe#/dl.7z",
+            "hash": "ab0b46acc1439077d801356fc5ac5af5f05349db249e87f1afede9e69edf7cf6"
+        },
+        "32bit": {
+            "url": "http://download.microsoft.com/download/7/1/0/7105C7FF-768E-4472-AFD5-F29108D1E383/NM34_x86.exe#/dl.7z",
+            "hash": "890e0d04f2028b9b74b2073baa7eccbe5810c6608e9ce647ed4310ed8e138156"
+        }
+    },
+    "installer": {
+        "script": [
+            "msiexec /qn /i \"$dir\\netmon.msi\" INSTALLDIR=\"$dir\" BUILDPROFILES=No | Out-Default",
+            "msiexec /qn /i \"$dir\\NetworkMonitor_Parsers.msi\" | Out-Default"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "msiexec /qn /x \"$dir\\netmon.msi\" | Out-Default",
+            "msiexec /qn /x \"$dir\\NetworkMonitor_Parsers.msi\" | Out-Default"
+        ]
+    }
+}
