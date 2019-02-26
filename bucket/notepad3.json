@@ -1,0 +1,31 @@
+{
+    "homepage": "https://www.rizonesoft.com/downloads/notepad3/",
+    "version": "5.19.108.1602",
+    "license": "BSD-3-Clause",
+    "url": "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_5.19.108.1602/Notepad3_5.19.108.1602.zip",
+    "hash": "df952cbb4f19888732b75dee04c81527ec9a3abdf9e079f12efff1b223afec74",
+    "depends": [
+        "7zip"
+    ],
+    "installer": {
+        "script": "7z.exe x \"$dir\\Notepad3_${version}_$(if ($architecture -eq '64bit') {'x64'} else {'x86'}).zip\" -o\"$dir\" | Out-Null"
+    },
+    "bin": "Notepad3.exe",
+    "shortcuts": [
+        [
+            "Notepad3.exe",
+            "Notepad3"
+        ]
+    ],
+    "notes": [
+        "To replace notepad with this, run the following command in cmd:",
+        "reg add \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\notepad.exe\" /v \"Debugger\" /t REG_SZ /d \"\\\"$dir\\Notepad3.exe\\\" /z\" /f"
+    ],
+    "checkver": {
+        "url": "https://github.com/rizonesoft/Notepad3/releases/latest",
+        "re": "\\/releases\\/tag\\/(?<prefix>[A-Za-z0-9]*)_(?<version>[\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/rizonesoft/Notepad3/releases/download/$matchPrefix_$version/Notepad3_$version.zip"
+    }
+}
