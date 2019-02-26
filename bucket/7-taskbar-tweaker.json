@@ -1,0 +1,24 @@
+{
+    "homepage": "http://rammichael.com/7-taskbar-tweaker",
+    "version": "5.6.1",
+    "license": "Freeware",
+    "url": "http://rammichael.com/downloads/7tt_setup.exe#/dl.7z",
+	"hash": "2c51f3e15b6754ad567bb351822fa4fd70c974cbb2c8eefcce61157c099bc678",
+	"post_install": [
+		"Copy-Item -Force \"$dir\\bin\\$(if ($architecture -eq '64bit') {'64'} else {'32'})\\*\" \"$dir\"",
+		"Move-Item -Force \"$dir\\7+ Taskbar Tweaker.ex2\" \"$dir\\7+ Taskbar Tweaker.exe\""
+	],
+	"shortcuts": [
+		[
+			"7+ Taskbar Tweaker.exe",
+			"7+ Taskbar Tweaker"
+		]
+	],
+    "checkver": {
+        "url": "https://rammichael.com/7-taskbar-tweaker",
+        "re": "Latest version: v(?<version>[-\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "http://rammichael.com/downloads/7tt_setup.exe#/dl.7z"
+    }
+}
