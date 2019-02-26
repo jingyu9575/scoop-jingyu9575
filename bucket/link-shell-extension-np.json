@@ -1,0 +1,43 @@
+{
+    "homepage": "http://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html",
+    "version": "3.9.1.3",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "http://schinagl.priv.at/nt/hardlinkshellext/HardLinkShellExt_X64.exe#/HardLinkShellExt_Setup.exe",
+            "hash": "5c13da0d7589cb8c582036f5a07acc9d18e8168c638e639c93c20fee18eae7e3",
+            "uninstaller": {
+                "file": "uninst-HardLinkShellExt_X64.exe",
+                "args": "/S"
+            }
+        },
+        "32bit": {
+            "url": "http://schinagl.priv.at/nt/hardlinkshellext/HardLinkShellExt_win32.exe#/HardLinkShellExt_Setup.exe",
+            "hash": "cbdecbb831b7eb658443b50107280d59a5d4585792165c56e89b0127c33bfb21",
+            "uninstaller": {
+                "file": "uninst-HardLinkShellExt_win32.exe",
+                "args": "/S"
+            }
+        }
+    },
+    "installer": {
+        "script": "& \"$dir\\HardLinkShellExt_Setup.exe\" /S /D=\"$dir\""
+    },
+    "suggest": {
+        "vcredist": "extras/vcredist2017"
+    },
+    "checkver": {
+        "url": "http://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html",
+        "re": "Last Updated [\\w\\s]+, Version ([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://schinagl.priv.at/nt/hardlinkshellext/HardLinkShellExt_X64.exe#/HardLinkShellExt_Setup.exe"
+            },
+            "32bit": {
+                "url": "http://schinagl.priv.at/nt/hardlinkshellext/HardLinkShellExt_win32.exe#/HardLinkShellExt_Setup.exe"
+            }
+        }
+    }
+}
