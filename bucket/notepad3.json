@@ -17,6 +17,10 @@
             "Notepad3"
         ]
     ],
+    "persist": [
+        "Notepad3.ini",
+        "minipath.ini"
+    ],
     "notes": [
         "To replace notepad with this, run the following command in cmd:",
         "reg add \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\notepad.exe\" /v \"Debugger\" /t REG_SZ /d \"\\\"$dir\\Notepad3.exe\\\" /z\" /f"
