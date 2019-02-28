@@ -1,7 +1,7 @@
 {
     "homepage": "https://www.cgsecurity.org/wiki/TestDisk",
     "version": "7.0",
-    "license": "MIT",
+    "license": "GPL-2.0-or-later",
     "url": "https://www.cgsecurity.org/testdisk-7.0.win.zip",
     "hash": "3c1fdbaca0ac686677f88b6bbf18d04c82f2c4047488c2e52da8e2347574b320",
     "extract_dir": "testdisk-7.0",
