@@ -1,0 +1,22 @@
+{
+    "homepage": "https://www.gnu.org/software/units/",
+    "version": "2.18",
+    "license": "GPL-3.0-or-later",
+    "url": "http://ftp.gnu.org/gnu/units/windows/units-2.18-setup.exe",
+    "hash": "be14f26f7c6933ac92903d20c44f7338be70d10b300936797bac65ce292b24a4",
+    "innosetup": true,
+    "bin": "units.exe",
+    "shortcuts": [
+        [
+            "units.exe",
+            "Units"
+        ]
+    ],
+    "checkver": {
+        "url": "http://ftp.gnu.org/gnu/units/windows/?C=M;O=D",
+        "re": "\\bunits-([\\d.]+)-setup.exe\\b"
+    },
+    "autoupdate": {
+        "url": "http://ftp.gnu.org/gnu/units/windows/units-$version-setup.exe"
+    }
+}
