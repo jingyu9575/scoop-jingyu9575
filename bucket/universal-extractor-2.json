@@ -1,17 +1,17 @@
 {
     "homepage": "https://github.com/Bioruebe/UniExtract2",
-    "version": "2.0.0-rc.1",
+    "version": "2.0.0-rc.2",
     "license": "GPL-2.0-only",
-    "url": "https://github.com/Bioruebe/UniExtract2/releases/download/v2.0.0-rc.1/UniExtractRC1.zip",
-    "hash": "a7e5b4499f8edab6eca0dc253c988ce3175198d5d174a49b57d6014dbff97731",
+    "url": "https://github.com/Bioruebe/UniExtract2/releases/download/v2.0.0-rc.2/UniExtractRC2.zip",
+    "hash": "c0b36042e8cd4f2169c7da1998e46c020c6578077b468d253312f010ffda3868",
     "extract_dir": "UniExtract",
-	"bin": "UniExtract.exe",
-	"shortcuts": [
-		[
-			"UniExtract.exe",
-			"Universal Extractor 2"
-		]
-	],
+    "bin": "UniExtract.exe",
+    "shortcuts": [
+        [
+            "UniExtract.exe",
+            "Universal Extractor 2"
+        ]
+    ],
     "checkver": {
         "url": "https://github.com/Bioruebe/UniExtract2/releases/latest",
         "re": "v(?<version>[-\\w.]+)/(?<filename>[-\\w.]+)\\.zip"
