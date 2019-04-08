@@ -1,15 +1,15 @@
 {
     "homepage": "https://sourceforge.net/projects/imdisk-toolkit/",
-    "version": "20190130",
+    "version": "20190407",
     "license": "http://www.ltr-data.se/files/license.txt",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/imdisk-toolkit/20190130/ImDiskTk-x64.exe#/ImDiskTk-Setup.exe",
-            "hash": "sha1:441b68ae4279de94b0d6da4c4199d718507ae8ce"
+            "url": "https://downloads.sourceforge.net/project/imdisk-toolkit/20190407/ImDiskTk-x64.exe#/ImDiskTk-Setup.exe",
+            "hash": "sha1:824ae848887ff49137a8fd2506be00585bdc53ee"
         },
         "32bit": {
-            "url": "https://downloads.sourceforge.net/project/imdisk-toolkit/20190130/ImDiskTk.exe#/ImDiskTk-Setup.exe",
-            "hash": "sha1:a06c594fd0837d2cf2f8dc20dfd81205af835c09"
+            "url": "https://downloads.sourceforge.net/project/imdisk-toolkit/20190407/ImDiskTk.exe#/ImDiskTk-Setup.exe",
+            "hash": "sha1:41fe3f490fe9f20df5a6ad9ae530eaed3edfba44"
         }
     },
     "installer": {
