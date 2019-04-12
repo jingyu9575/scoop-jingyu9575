@@ -1,11 +1,11 @@
 {
     "homepage": "https://github.com/VSCodium/vscodium",
-    "version": "1.33.0",
+    "version": "1.33.1",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/VSCodium/vscodium/releases/download/1.33.0/VSCodium-win32-x64-1.33.0.zip",
-            "hash": "9dde1acd92f5be75da48a48f3fad8975222e15fe5239d1eb93dac1fa1373b42f"
+            "url": "https://github.com/VSCodium/vscodium/releases/download/1.33.1/VSCodium-win32-x64-1.33.1.zip",
+            "hash": "28f4c48b24aeb39a2145a8447b8b8bbbb712476c048997406a16d4b3a8b5f8e6"
         }
     },
     "bin": [
