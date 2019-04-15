@@ -11,7 +11,7 @@ if ($CompareBranch) {
 		Write-Error "Not at branch $CompareBranch. Exiting."
 		exit
 	}
-	git.exe checkout "$CompareBranch" | Write-Output
+	try { git.exe checkout "$CompareBranch" } catch { Write-Output $_ }
 }
 
 & $env:USERPROFILE\scoop\apps\scoop\current\bin\checkver.ps1 -dir bucket * -u
@@ -25,5 +25,5 @@ if (-not $changes) {
 
 git.exe commit -am "Auto Update $(Get-Date -UFormat "%Y-%m-%d"): $changes"
 if ($Push) {
-	git.exe push | Write-Output
+	try { git.exe push } catch { Write-Output $_ }
 }
