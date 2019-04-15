@@ -1,28 +1,29 @@
 param (
-    [switch]$Push = $false,
-    [string]$CompareBranch = ''
+	[switch]$Push = $false,
+	[string]$CompareBranch = ''
 )
 
 $ErrorActionPreference = "Stop"
 
 if ($CompareBranch) {
-	git diff-index --quiet "$CompareBranch"
+	git.exe diff-index --quiet "$CompareBranch"
 	if ($LastExitCode) {
 		Write-Error "Not at branch $CompareBranch. Exiting."
 		exit
 	}
-	try { git checkout "$CompareBranch" } catch {}
+	git.exe checkout "$CompareBranch" | Write-Output
 }
 
 & $env:USERPROFILE\scoop\apps\scoop\current\bin\checkver.ps1 -dir bucket * -u
 
-git diff-index --quiet HEAD
-if (-not $LastExitCode) {
-	Write-Host "No changes."
+$changes = (git.exe diff-index HEAD |
+	% { (($_ -split '\s+')[-1] -replace 'bucket/(.*).json', '$1' ) }) -join ', '
+if (-not $changes) {
+	Write-Output "No changes."
 	exit
 }
 
-git commit -am "Auto Update $(Get-Date -UFormat "%Y-%m-%d")"
+git.exe commit -am "Auto Update $(Get-Date -UFormat "%Y-%m-%d"): $changes"
 if ($Push) {
-	try { git push } catch {}
+	git.exe push | Write-Output
 }
