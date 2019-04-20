@@ -1,0 +1,45 @@
+{
+    "homepage": "https://www.thunderbird.net/",
+    "version": "60.6.1",
+    "license": "MPL-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://download.mozilla.org/?product=thunderbird-60.6.1-SSL&os=win64&lang=zh-CN#/thunderbird-setup_x64.7z",
+            "hash": "sha512:9de40610c74720833896bceded2a744d5e606b4504120df51471e56b561ccbf34d0a42fb042fb44ce0f061a133560ed0d5823d205df5fce1272c02e80c1bfd43"
+        },
+        "32bit": {
+            "url": "https://download.mozilla.org/?product=thunderbird-60.6.1-SSL&os=win&lang=zh-CN#/thunderbird-setup.7z",
+            "hash": "sha512:e97d214d7891c696c4730a32c1bb0509c4e9210bc496027f816749f9953306de8cbeb8b0f8eb295e1a72bb744377164fc7e3de873b7dfd066dee573cea8b1bca"
+        }
+    },
+    "extract_dir": "core",
+    "bin": "thunderbird.exe",
+    "shortcuts": [
+        [
+            "thunderbird.exe",
+            "Mozilla Thunderbird"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.thunderbird.net/zh-CN/thunderbird/all/",
+        "re": "thunderbird-([\\d.]+)-SSL&os=win&lang=zh-CN"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.mozilla.org/?product=thunderbird-$version-SSL&os=win64&lang=zh-CN#/thunderbird-setup_x64.7z",
+                "hash": {
+                    "find": "([a-fA-F0-9]{128})\\s+(?:win64/zh-CN/Thunderbird Setup ([\\d.]+).exe)",
+                    "url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/$version/SHA512SUMS"
+                }
+            },
+            "32bit": {
+                "url": "https://download.mozilla.org/?product=thunderbird-$version-SSL&os=win&lang=zh-CN#/thunderbird-setup.7z",
+                "hash": {
+                    "find": "([a-fA-F0-9]{128})\\s+(?:win32/zh-CN/Thunderbird Setup ([\\d.]+).exe)",
+                    "url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/$version/SHA512SUMS"
+                }
+            }
+        }
+    }
+}
