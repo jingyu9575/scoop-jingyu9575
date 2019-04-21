@@ -1,0 +1,37 @@
+{
+    "homepage": "https://wiki.mozilla.org/Add-ons/Extension_Signing#Unbranded_Builds",
+    "version": "66.0.4",
+    "license": "MPL-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://index.taskcluster.net/v1/task/gecko.v2.mozilla-release.latest.firefox.win64-add-on-devel/artifacts/public/build/target.zip",
+            "hash": "d07d0d5f6548f56a54a50c91cfddd3665f34fa5889fcb29804ad16e719a14f9d"
+        },
+        "32bit": {
+            "url": "https://index.taskcluster.net/v1/task/gecko.v2.mozilla-release.latest.firefox.win32-add-on-devel/artifacts/public/build/target.zip",
+            "hash": "12aaa5603517d3379a25feb079c1b576696760023f7aa67fd1bcb684420d4208"
+        }
+    },
+    "extract_dir": "firefox",
+    "bin": "firefox.exe",
+    "shortcuts": [
+        [
+            "firefox.exe",
+            "Firefox Unbranded"
+        ]
+    ],
+    "checkver": {
+        "url": "https://hg.mozilla.org/releases/mozilla-release/raw-file/tip/browser/config/version.txt",
+        "re": "([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://index.taskcluster.net/v1/task/gecko.v2.mozilla-release.latest.firefox.win64-add-on-devel/artifacts/public/build/target.zip"
+            },
+            "32bit": {
+                "url": "https://index.taskcluster.net/v1/task/gecko.v2.mozilla-release.latest.firefox.win32-add-on-devel/artifacts/public/build/target.zip"
+            }
+        }
+    }
+}
