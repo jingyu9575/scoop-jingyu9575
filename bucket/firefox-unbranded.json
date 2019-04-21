@@ -1,15 +1,15 @@
 {
     "homepage": "https://wiki.mozilla.org/Add-ons/Extension_Signing#Unbranded_Builds",
-    "version": "0",
+    "version": "66_0_3",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "",
-            "hash": ""
+            "url": "https://index.taskcluster.net/v1/task/gecko.v2.mozilla-release.revision.37ecfd08ffee9924609121aaec3f101598f8a84e.firefox.win64-add-on-devel/artifacts/public/build/target.zip",
+            "hash": "19b3a7d4f478c5576351c251cbe8f9713c807c8c1fa8bdbfca2874cdc6d53904"
         },
         "32bit": {
-            "url": "",
-            "hash": ""
+            "url": "https://index.taskcluster.net/v1/task/gecko.v2.mozilla-release.revision.37ecfd08ffee9924609121aaec3f101598f8a84e.firefox.win32-add-on-devel/artifacts/public/build/target.zip",
+            "hash": "3fd548cdafbb756b129d35b01f93941efefc30e2abe4e3b8987e37506528c52b"
         }
     },
     "extract_dir": "firefox",
