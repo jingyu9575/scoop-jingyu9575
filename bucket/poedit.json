@@ -1,7 +1,7 @@
 {
     "homepage": "https://poedit.net/",
     "version": "2.2.1",
-    "license": "MIT",
+    "license": "Freeware",
     "url": "https://download.poedit.net/Poedit-2.2.1-setup.exe",
     "hash": "63906ceba58954b0c7083f28e6b964ea36d96ad91a37ee751311758e8e963107",
     "innosetup": true,
