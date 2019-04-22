@@ -13,6 +13,13 @@
         }
     },
     "extract_dir": "firefox",
+    "pre_install": [
+        "mkdir -f \"$dir\\distribution\" | Out-Null",
+        "Set-Content \"$dir\\distribution\\policies.json\" '{\"policies\":{\"DisableAppUpdate\":true,\"DisableFirefoxStudies\":true,\"DisableSystemAddonUpdate\":true,\"DisableTelemetry\":true}}'"
+    ],
+    "persist": [
+        "distribution"
+    ],
     "bin": "firefox.exe",
     "shortcuts": [
         [
