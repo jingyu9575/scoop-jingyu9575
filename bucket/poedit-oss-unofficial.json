@@ -11,9 +11,10 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/jingyu9575/poedit-oss-unofficial"
+        "url": "https://github.com/jingyu9575/poedit-oss-unofficial/releases/latest",
+        "re": "\/releases\/tag\/(?:v|V)?(?<version>[\\d.]+)(?<suffix>(?:-oss)?)"
     },
     "autoupdate": {
-        "url": "https://github.com/jingyu9575/poedit-oss-unofficial/releases/download/v$version/poedit-oss-unofficial.zip"
+        "url": "https://github.com/jingyu9575/poedit-oss-unofficial/releases/download/v$version$matchSuffix/poedit-oss-unofficial.zip"
     }
 }
