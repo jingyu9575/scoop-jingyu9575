@@ -1,7 +1,7 @@
 {
     "version": "3.1.2",
     "homepage": "https://www.sumatrapdfreader.org",
-    "license": "GPL-3.0-only,BSD-2-Clause",
+    "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
             "url": "https://github.com/jingyu9575/sumatrapdf-nodrm-unofficial/releases/download/3.1.2rel/SumatraPDF64.exe#/SumatraPDF.exe",
