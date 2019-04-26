@@ -1,0 +1,45 @@
+{
+    "version": "3.1.2",
+    "homepage": "https://www.sumatrapdfreader.org",
+    "license": "GPL-3.0-only,BSD-2-Clause",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/jingyu9575/sumatrapdf-nodrm-unofficial/releases/download/3.1.2rel/SumatraPDF64.exe#/SumatraPDF.exe",
+            "hash": "63ceaa03bd9453a812363b914cbf23f3bd44e9aacac1d6de5e201cf496866746"
+        },
+        "32bit": {
+            "url": "https://github.com/jingyu9575/sumatrapdf-nodrm-unofficial/releases/download/3.1.2rel/SumatraPDF.exe",
+            "hash": "609d9f66bb9c2b7c6ec962065198e3234319d3deef0791aaf4e392cf5beac787"
+        }
+    },
+    "pre_install": [
+        "$file = 'SumatraPDF-settings.txt'",
+        "if (-not (Test-Path \"$persist_dir\\$file\")) {",
+        "    Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
+        "    $CONT = @('CheckForUpdates = false')",
+        "    Set-Content \"$dir\\$file\" ($CONT -join \"`r`n\") -Encoding Ascii",
+        "}"
+    ],
+    "bin": "SumatraPDF.exe",
+    "shortcuts": [
+        [
+            "SumatraPDF.exe",
+            "SumatraPDF"
+        ]
+    ],
+    "persist": "SumatraPDF-settings.txt",
+    "checkver": {
+        "url": "https://github.com/jingyu9575/sumatrapdf-nodrm-unofficial/releases/latest",
+        "re": "/releases/tag/(?<prefix>v|V)?(?<version>[\\d.]+)(?<suffix>rel|split)?"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/jingyu9575/sumatrapdf-nodrm-unofficial/releases/download/$matchPrefix$version$matchSuffix/SumatraPDF64.exe#/SumatraPDF.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/jingyu9575/sumatrapdf-nodrm-unofficial/releases/download/$matchPrefix$version$matchSuffix/SumatraPDF.exe"
+            }
+        }
+    }
+}
