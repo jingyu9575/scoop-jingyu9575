@@ -1,0 +1,21 @@
+{
+    "homepage": "https://www.adobe.com/support/flashplayer/debug_downloads.html",
+    "version": "32.0.0.171",
+    "license": "Freeware",
+    "url": "https://fpdownload.macromedia.com/pub/flashplayer/updaters/32/flashplayer_32_sa.exe#/flashplayer_sa.exe",
+    "hash": "4f69d4d95388a6b998498eb175f0a9bca7b25a767d015fc1815f183684823044",
+    "bin": "flashplayer_sa.exe",
+    "shortcuts": [
+        [
+            "flashplayer_sa.exe",
+            "Flash Player Standalone"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.adobe.com/support/flashplayer/debug_downloads.html",
+        "re": "latest versions are <span>([\\d.]+)</span>"
+    },
+    "autoupdate": {
+        "url": "https://fpdownload.macromedia.com/pub/flashplayer/updaters/$majorVersion/flashplayer_$majorVersion_sa.exe#/flashplayer_sa.exe"
+    }
+}
