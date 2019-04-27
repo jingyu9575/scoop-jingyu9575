@@ -1,0 +1,17 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "checkver",
+			"type": "PowerShell",
+			"request": "launch",
+			"script": "checkver",
+			"args": [
+				"-dir",
+				"bucket",
+				"${fileBasenameNoExtension}",
+				"-u"
+			]
+		}
+	]
+}
