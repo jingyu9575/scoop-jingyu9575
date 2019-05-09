@@ -1,0 +1,33 @@
+{
+	"homepage": "https://www.draw.io/",
+	"version": "9.3.1",
+	"license": "Apache-2.0",
+	"architecture": {
+		"64bit": {
+			"url": "https://github.com/jgraph/drawio-desktop/releases/download/v9.3.1/draw.io-windows-portable-9.3.1.exe#/dl.7z",
+			"hash": "ee6037e08dd42a86854120f37ef8579a407a6ed4f109c8d005d4804652bcfcb2"
+		}
+	},
+	"extract_dir": "$PLUGINSDIR",
+	"depends": "7zip",
+	"installer": {
+		"script": "7z.exe x \"$dir\\app-64.7z\" -o\"$dir\" | Out-Null; Remove-Item \"$dir\\app-64.7z\""
+	},
+	"bin": "draw.io.exe",
+	"shortcuts": [
+		[
+			"draw.io.exe",
+			"draw.io"
+		]
+	],
+	"checkver": {
+		"github": "https://github.com/jgraph/drawio-desktop"
+	},
+	"autoupdate": {
+		"architecture": {
+			"64bit": {
+				"url": "https://github.com/jgraph/drawio-desktop/releases/download/v$version/draw.io-windows-portable-$version.exe#/dl.7z"
+			}
+		}
+	}
+}
