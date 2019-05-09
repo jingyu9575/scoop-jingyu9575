@@ -9,7 +9,7 @@
             "/qn",
             "APPLICATIONFOLDER=\"$dir\""
         ],
-        "keep": "true"
+        "keep": true
     },
     "uninstaller": {
         "file": "OpenShellSetup.exe",

@@ -17,7 +17,7 @@
             "/fullsilent",
             "/installfolder:\"$dir\""
         ],
-        "keep": "true"
+        "keep": true
     },
     "uninstaller": {
         "file": "ImDiskTk-Setup.exe",
