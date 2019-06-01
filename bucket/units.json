@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.gnu.org/software/units/",
-    "version": "2.18",
+    "version": "2.19",
     "license": "GPL-3.0-or-later",
-    "url": "http://ftp.gnu.org/gnu/units/windows/units-2.18-setup.exe",
-    "hash": "be14f26f7c6933ac92903d20c44f7338be70d10b300936797bac65ce292b24a4",
+    "url": "http://ftp.gnu.org/gnu/units/windows/units-2.19-setup.exe",
+    "hash": "4caa3ec284afc246064cb0d337ee94c524eeeb846d72d6575c1f78e00482ae34",
     "innosetup": true,
     "bin": "units.exe",
     "shortcuts": [
