@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.adobe.com/support/flashplayer/debug_downloads.html",
-    "version": "32.0.0.192",
+    "version": "32.0.0.207",
     "license": "Freeware",
     "url": "https://fpdownload.macromedia.com/pub/flashplayer/updaters/32/flashplayer_32_sa.exe#/flashplayer_sa.exe",
-    "hash": "229032839b16c289acff2563a79eae0b95c6d948e22dffa50e0e93a59506c2a3",
+    "hash": "92cdd70c95ffe111269de242b2fee4be3d193fa75e6ab8e0557f07a833c5c919",
     "bin": "flashplayer_sa.exe",
     "shortcuts": [
         [
