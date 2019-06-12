@@ -1,33 +1,33 @@
 {
-	"homepage": "https://www.draw.io/",
-	"version": "10.7.5",
-	"license": "Apache-2.0",
-	"architecture": {
-		"64bit": {
-			"url": "https://github.com/jgraph/drawio-desktop/releases/download/v10.7.5/draw.io-10.7.5-windows-no-installer.exe#/dl.7z",
-			"hash": "e71892bf2df807f43ea6fab7e64569ce59ca9a438189a8077c163f5936253e97"
-		}
-	},
-	"extract_dir": "$PLUGINSDIR",
-	"depends": "7zip",
-	"installer": {
-		"script": "7z.exe x \"$dir\\app-64.7z\" -o\"$dir\" | Out-Null; Remove-Item \"$dir\\app-64.7z\""
-	},
-	"bin": "draw.io.exe",
-	"shortcuts": [
-		[
-			"draw.io.exe",
-			"draw.io"
-		]
-	],
-	"checkver": {
-		"github": "https://github.com/jgraph/drawio-desktop"
-	},
-	"autoupdate": {
-		"architecture": {
-			"64bit": {
-				"url": "https://github.com/jgraph/drawio-desktop/releases/download/v$version/draw.io-$version-windows-no-installer.exe#/dl.7z"
-			}
-		}
-	}
+    "homepage": "https://www.draw.io/",
+    "version": "10.7.7",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v10.7.7/draw.io-10.7.7-windows-no-installer.exe#/dl.7z",
+            "hash": "d053c37e3e453405fda5138533b1d3fbb41d9867f143dedf40903d797161ce42"
+        }
+    },
+    "extract_dir": "$PLUGINSDIR",
+    "depends": "7zip",
+    "installer": {
+        "script": "7z.exe x \"$dir\\app-64.7z\" -o\"$dir\" | Out-Null; Remove-Item \"$dir\\app-64.7z\""
+    },
+    "bin": "draw.io.exe",
+    "shortcuts": [
+        [
+            "draw.io.exe",
+            "draw.io"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/jgraph/drawio-desktop"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/jgraph/drawio-desktop/releases/download/v$version/draw.io-$version-windows-no-installer.exe#/dl.7z"
+            }
+        }
+    }
 }
