@@ -1,9 +1,9 @@
 {
     "homepage": "https://rime.im/",
-    "version": "0.13.0.0",
+    "version": "0.14.0.135",
     "license": "GPL-3.0-only",
-    "url": "https://dl.bintray.com/rime/weasel/weasel-0.13.0.0-installer.exe#/dl.7z",
-    "hash": "e17dbc316e83b68d9dcbefe08798dda7a0ed9103fdbfd3530ebf7bf90d3732a4",
+    "url": "https://dl.bintray.com/rime/weasel/weasel-0.14.0.135-installer.exe",
+    "hash": "ad622d6cf42012126c1e61310dfb6a774d41e5894e80f28b4c9bfaf2601d0144",
     "persist": "user",
     "pre_install": "New-Item HKCU:\\Software\\Rime\\Weasel -Force | New-ItemProperty -Name RimeUserDir -Value \"$persist_dir\\user\" | Out-Null",
     "installer": {
@@ -18,9 +18,7 @@
             "小狼毫算法服务"
         ]
     ],
-    "notes": [
-        "请运行算法服务（WeaselServer.exe）并添加到开机启动。"
-    ],
+    "notes": "请运行算法服务（WeaselServer.exe）并添加到开机启动。",
     "checkver": {
         "url": "https://bintray.com/rime/weasel/release/_latestVersion",
         "re": "weasel-([\\d.]+)-installer.exe"
