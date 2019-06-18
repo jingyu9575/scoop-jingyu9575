@@ -1,9 +1,9 @@
 {
     "homepage": "https://rime.im/",
-    "version": "0.14.1.138",
+    "version": "0.14.2.140",
     "license": "GPL-3.0-only",
-    "url": "https://dl.bintray.com/rime/weasel/weasel-0.14.1.138-installer.exe#/dl.7z",
-    "hash": "7c7b1d22675fe4cb5360f726a6f7d19bf0415338fb38ea0de5c71a6e694081f2",
+    "url": "https://dl.bintray.com/rime/weasel/weasel-0.14.2.140-installer.exe#/dl.7z",
+    "hash": "f37cce33b04c382ff1ac8831f01ffe498d1d2a554d61833a48d02e053f4d88b2",
     "persist": "user",
     "pre_install": "New-Item HKCU:\\Software\\Rime\\Weasel -Force | New-ItemProperty -Name RimeUserDir -Value \"$persist_dir\\user\" | Out-Null",
     "installer": {
