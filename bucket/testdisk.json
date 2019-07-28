@@ -6,8 +6,14 @@
     "hash": "1231ccfd46815e324f3c541b1e4a0a569a0a16b5c7d320c8c049c36595785224",
     "extract_dir": "testdisk-7.1",
     "bin": [
-        "testdisk_win.exe",
-        "photorec_win.exe"
+        [
+            "testdisk_win.exe",
+            "testdisk"
+        ],
+        [
+            "photorec_win.exe",
+            "photorec"
+        ]
     ],
     "shortcuts": [
         [

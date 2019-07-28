@@ -18,7 +18,12 @@
         "Set-Content \"$dir\\distribution\\policies.json\" '{\"policies\":{\"DisableAppUpdate\":true,\"DisableFirefoxStudies\":true,\"DisableSystemAddonUpdate\":true,\"DisableTelemetry\":true}}'"
     ],
     "persist": "distribution",
-    "bin": "firefox.exe",
+    "bin": [
+        [
+            "firefox.exe",
+            "firefox-unbranded"
+        ]
+    ],
     "shortcuts": [
         [
             "firefox.exe",
