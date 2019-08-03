@@ -1,11 +1,11 @@
 {
     "homepage": "https://www.draw.io/",
-    "version": "10.9.5",
+    "version": "11.1.1",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v10.9.5/draw.io-10.9.5-windows-no-installer.exe#/dl.7z",
-            "hash": "e549ac5f8a5353defb932956f9ee17509c76e0f3ed9b22a0b035c6902a01027d"
+            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v11.1.1/draw.io-11.1.1-windows-no-installer.exe#/dl.7z",
+            "hash": "11a3a99d048b76e226208210bf1b422022e20df4c5534fef408180e92ba1d1a0"
         }
     },
     "extract_dir": "$PLUGINSDIR",
