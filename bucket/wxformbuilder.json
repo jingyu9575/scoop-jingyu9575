@@ -1,0 +1,20 @@
+{
+    "homepage": "https://github.com/wxFormBuilder/wxFormBuilder/",
+    "version": "3.9.0",
+    "license": "GPL-2.0-only",
+    "url": "https://github.com/wxFormBuilder/wxFormBuilder/releases/download/v3.9.0/wxFormBuilder_v3.9.0.exe",
+    "hash": "a0c21647febe0007b97b71ba3209cda0086703228f7b38f476571ccc9a95c8a3",
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "wxFormBuilder.exe",
+            "wxFormBuilder"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/wxFormBuilder/wxFormBuilder/"
+    },
+    "autoupdate": {
+        "url": "https://github.com/wxFormBuilder/wxFormBuilder/releases/download/v$version/wxFormBuilder_v$version.exe"
+    }
+}
