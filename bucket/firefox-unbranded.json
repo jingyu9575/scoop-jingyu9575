@@ -1,15 +1,15 @@
 {
     "homepage": "https://wiki.mozilla.org/Add-ons/Extension_Signing#Unbranded_Builds",
-    "version": "68_0_1",
+    "version": "68_0_2",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://index.taskcluster.net/v1/task/gecko.v2.mozilla-release.revision.837bbcb850cd58eb07c7f6437078d5229986967c.firefox.win64-add-on-devel/artifacts/public/build/target.zip",
-            "hash": "cc6993c950b7361baa2548478665757f4ab094c77f0927891471c80edaeda356"
+            "url": "https://index.taskcluster.net/v1/task/gecko.v2.mozilla-release.revision.7ece03f6971968eede29275477502309bbe399da.firefox.win64-add-on-devel/artifacts/public/build/target.zip",
+            "hash": "afa94896fbb28e73db500d590c80ca4d17fbaa570fe7e44bc24b4d15ed926e0d"
         },
         "32bit": {
-            "url": "https://index.taskcluster.net/v1/task/gecko.v2.mozilla-release.revision.837bbcb850cd58eb07c7f6437078d5229986967c.firefox.win32-add-on-devel/artifacts/public/build/target.zip",
-            "hash": "616341eb251a4bfab48c410fd9e508255bb9c9abc7f2b9e549044dac71c7ba66"
+            "url": "https://index.taskcluster.net/v1/task/gecko.v2.mozilla-release.revision.7ece03f6971968eede29275477502309bbe399da.firefox.win32-add-on-devel/artifacts/public/build/target.zip",
+            "hash": "844ad37879b7132f0048abe1ea15b4298b4ae604ac4aab071b17c6aaa81b27fe"
         }
     },
     "extract_dir": "firefox",
