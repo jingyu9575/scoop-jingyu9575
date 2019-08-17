@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.rizonesoft.com/downloads/notepad3/",
-    "version": "5.19.630.2381",
+    "version": "5.19.815.2595",
     "license": "BSD-3-Clause",
-    "url": "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_5.19.630.2381/Notepad3_5.19.630.2381.zip",
-    "hash": "4c2ddca0f2e27b5980ad33f9f21b3fb9693631d6643568fff2e2e964092c1d4c",
+    "url": "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_5.19.815.2595/Notepad3_5.19.815.2595.zip",
+    "hash": "f837f7f054f9b681dd9d79d61661c04d3f2ed580b959a0ae3606cc6800b37958",
     "depends": "7zip",
     "installer": {
         "script": "7z.exe x \"$dir\\Notepad3_${version}_$(if ($architecture -eq '64bit') {'x64'} else {'x86'}).zip\" -o\"$dir\" | Out-Null"
