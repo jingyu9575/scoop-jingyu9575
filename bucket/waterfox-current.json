@@ -1,0 +1,27 @@
+{
+    "version": "68.0b1",
+    "homepage": "https://www.waterfoxproject.org/",
+    "license": "MPL-2.0",
+    "url": "https://storage-waterfox.netdna-ssl.com/Waterfox/beta/WINNT/Waterfox%2068.0b1%20Setup.exe#/dl.7z",
+    "hash": "881b36bcc306e2366ace89f33987e08526526cf2a7eec3bc4802fddcba8342e6",
+    "extract_dir": "core",
+    "bin": [
+        [
+            "waterfox.exe",
+            "waterfox-current"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "waterfox.exe",
+            "Waterfox Current"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.waterfox.net/releases/",
+        "regex": "\\bWaterfox/(?<dir>aurora|beta)/WINNT/Waterfox%20(?<version>[\\d.]+[ab][\\d.]+)%20Setup.exe\\b"
+    },
+    "autoupdate": {
+        "url": "https://storage-waterfox.netdna-ssl.com/Waterfox/$matchDir/WINNT/Waterfox%20$version%20Setup.exe#/dl.7z"
+    }
+}
