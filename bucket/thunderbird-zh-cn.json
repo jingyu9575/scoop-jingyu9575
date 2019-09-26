@@ -1,15 +1,15 @@
 {
     "homepage": "https://www.thunderbird.net/",
-    "version": "68.1.0",
+    "version": "68.1.1",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://download.mozilla.org/?product=thunderbird-68.1.0-SSL&os=win64&lang=zh-CN#/thunderbird-setup_x64.7z",
-            "hash": "sha512:65b04feee7165bc8bd2df24fc09a7fd601b632ad32f28c7f535b3e2c726d5c2f76018d26ef4b9c2142144e8a7d519c362d79bc1da842c65acba4b4235a2f1f1b"
+            "url": "https://download.mozilla.org/?product=thunderbird-68.1.1-SSL&os=win64&lang=zh-CN#/thunderbird-setup_x64.7z",
+            "hash": "sha512:cc0f6523366f82287119a2c7e14df7b1aa91361b79c07d91d3f2eee0a9c7af7547adb276d873b02aec2a03773d0594e791392919f71ce409c60fad6069c3ae3b"
         },
         "32bit": {
-            "url": "https://download.mozilla.org/?product=thunderbird-68.1.0-SSL&os=win&lang=zh-CN#/thunderbird-setup.7z",
-            "hash": "sha512:d12465ef814b7b680f2b7ce9573397034cd0c8228e93eef5ec36f673afce314c44025f14d1a687c55468c2c4ea8bc12933a221f8092f104f0ab47222535a3ff9"
+            "url": "https://download.mozilla.org/?product=thunderbird-68.1.1-SSL&os=win&lang=zh-CN#/thunderbird-setup.7z",
+            "hash": "sha512:ab3bbbf88a063e81d2312b14ad75276b5a960302345718d7e65114f9b1c50530240d45727a1643d183bbf5804e9412c74bb3e4d10384d90b59b5b4dc0ae18ab8"
         }
     },
     "extract_dir": "core",
