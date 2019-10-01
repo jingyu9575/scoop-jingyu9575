@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/patrickfav/uber-apk-signer",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "license": "Apache-2.0",
-    "url": "https://github.com/patrickfav/uber-apk-signer/releases/download/v1.0.0/uber-apk-signer-1.0.0.jar#/uber-apk-signer.jar",
-    "hash": "abcb2760debb4b604530fdccd82906d38b123d49c320b767ef1277959d30d36f",
+    "url": "https://github.com/patrickfav/uber-apk-signer/releases/download/v1.1.0/uber-apk-signer-1.1.0.jar#/uber-apk-signer.jar",
+    "hash": "8ef1d44cc787e6bdf18774c926ff87f74850d55ba5810bdc5d63555046c93eff",
     "bin": "uber-apk-signer.jar",
     "checkver": {
         "github": "https://github.com/patrickfav/uber-apk-signer"
