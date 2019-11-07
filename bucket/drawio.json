@@ -1,11 +1,11 @@
 {
     "homepage": "https://www.draw.io/",
-    "version": "12.1.7",
+    "version": "12.2.2",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v12.1.7/draw.io-12.1.7.exe#/dl.7z",
-            "hash": "06a0c6eb4d321e101cd650e55e9b647a77afdb3a381a9a8ad6f301cccdb295a0"
+            "url": "https://github.com/jgraph/drawio-desktop/releases/download/v12.2.2/draw.io-12.2.2.exe#/dl.7z",
+            "hash": "2acb28b30a4898795fb87e664c153c7f76dff4b31c9dbe204d92526159e817bd"
         }
     },
     "extract_dir": "$PLUGINSDIR",
