@@ -1,11 +1,11 @@
 {
     "homepage": "http://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html",
-    "version": "3.9.2.9",
+    "version": "3.9.3.0",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "http://schinagl.priv.at/nt/hardlinkshellext/HardLinkShellExt_X64.exe#/HardLinkShellExt_Setup.exe",
-            "hash": "171ec8e9801469bbb3cd838678dbd63fea29e31ebcd50c3d99eb01e3860882c8",
+            "hash": "f148bb3954b83b6ee269c17fa650f3a0248ba686239b1cff21ff17825b046e23",
             "uninstaller": {
                 "file": "uninst-HardLinkShellExt_X64.exe",
                 "args": "/S"
@@ -13,7 +13,7 @@
         },
         "32bit": {
             "url": "http://schinagl.priv.at/nt/hardlinkshellext/HardLinkShellExt_win32.exe#/HardLinkShellExt_Setup.exe",
-            "hash": "632b61e3d8ded7a963b8d959079cc60225945be486437fd59cf8f96b5283cbcb",
+            "hash": "74d21fb9940df5af6d7a661cf6f306e9444a885f5bd367afce92847046214a6f",
             "uninstaller": {
                 "file": "uninst-HardLinkShellExt_win32.exe",
                 "args": "/S"
