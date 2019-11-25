@@ -1,0 +1,40 @@
+{
+    "version": "37",
+    "homepage": "http://smartversion.com/",
+    "license": {
+        "identifier": "Shareware",
+        "url": "http://smartversion.com/order.htm"
+    },
+    "notes": "SmartVersion is shareware; must be registered or reset after 30 days.",
+    "architecture": {
+        "64bit": {
+            "url": "http://www.smartversion.com/smartvs37_x64.zip",
+            "hash": "8286bf48bddf54d1a686c87c8570dd93d39af332b58bb009a0828fcf7aa16e81"
+        },
+        "32bit": {
+            "url": "http://www.smartversion.com/smartvs37.zip",
+            "hash": "1a763be725fc39d59179bc6730461cd42f111d2a448c4a4056c4742f69dacb39"
+        }
+    },
+    "bin": "smv.exe",
+    "shortcuts": [
+        [
+            "smartvs.exe",
+            "SmartVersion"
+        ]
+    ],
+    "checkver": {
+        "url": "http://smartversion.com/download.htm",
+        "regex": "http://www.smartversion.com/smartvs([\\d\\.]+).zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://www.smartversion.com/smartvs$version_x64.zip"
+            },
+            "32bit": {
+                "url": "http://www.smartversion.com/smartvs$version.zip"
+            }
+        }
+    }
+}
