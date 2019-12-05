@@ -1,9 +1,9 @@
 {
     "homepage": "https://winscp.net",
     "license": "GPL-3.0-or-later",
-    "version": "5.15.7",
-    "url": "https://downloads.sourceforge.net/project/winscp/WinSCP/5.15.7/WinSCP-5.15.7-Setup.exe",
-    "hash": "sha1:ad01770a0ee43a411a3581b43e910d63e2dad989",
+    "version": "5.15.9",
+    "url": "https://downloads.sourceforge.net/project/winscp/WinSCP/5.15.9/WinSCP-5.15.9-Setup.exe",
+    "hash": "sha1:b48aa16823e6114891dabe8b7ab8a4362ef9dd3f",
     "innosetup": true,
     "bin": "WinSCP.exe",
     "persist": "winscp.ini",
