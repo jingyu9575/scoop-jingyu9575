@@ -1,0 +1,36 @@
+{
+    "homepage": "https://tigervnc.org/",
+    "version": "1.10.0",
+    "license": "GPL-2.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://bintray.com/tigervnc/stable/download_file?file_path=tigervnc64-1.10.0.exe",
+            "hash": "9618abdf58937d6d58808ef53588017b403f95a6dc0d72f16468f8000889ff30"
+        },
+        "32bit": {
+            "url": "https://bintray.com/tigervnc/stable/download_file?file_path=tigervnc-1.10.0.exe",
+            "hash": "8d04a6791da9d405a87826ed7c687a1b64c077667edb75fc07d8cef9c1ef7b46"
+        }
+    },
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "vncviewer.exe",
+            "TigerVNC Viewer"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.bintray.com/packages/tigervnc/stable/tigervnc/",
+        "re": "\"latest_version\"\\s*:\\s*\"([\\d.]+)\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://bintray.com/tigervnc/stable/download_file?file_path=tigervnc64-$version.exe"
+            },
+            "32bit": {
+                "url": "https://bintray.com/tigervnc/stable/download_file?file_path=tigervnc-$version.exe"
+            }
+        }
+    }
+}
