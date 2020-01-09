@@ -1,0 +1,36 @@
+{
+    "homepage": "https://www.unidata.ucar.edu/software/netcdf/",
+    "version": "4.7.3",
+    "license": "BSD-3-Clause",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.unidata.ucar.edu/downloads/netcdf/ftp/netCDF4.7.3-NC4-DAP-64.exe#/dl.7z",
+            "hash": "93e4fbc745afcd30bd5df414efeece6b31d5ef77a836dc6920b091f29d0e3cb5"
+        },
+        "32bit": {
+            "url": "https://www.unidata.ucar.edu/downloads/netcdf/ftp/netCDF4.7.3-NC4-DAP-32.exe#/dl.7z",
+            "hash": "a4a2e6570970901e0b2e077cb306db787380d3f278c7d8cc7bf9ef8179208405"
+        }
+    },
+    "extract_dir": "bin",
+    "bin": [
+        "nccopy.exe",
+        "ncdump.exe",
+        "ncgen.exe",
+        "ncgen3.exe"
+    ],
+    "checkver": {
+        "url": "https://www.unidata.ucar.edu/downloads/netcdf/index.jsp",
+        "regex": "/downloads/netcdf/ftp/netCDF([\\d.]+)-NC4-DAP-64.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.unidata.ucar.edu/downloads/netcdf/ftp/netCDF$version-NC4-DAP-64.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://www.unidata.ucar.edu/downloads/netcdf/ftp/netCDF$version-NC4-DAP-32.exe#/dl.7z"
+            }
+        }
+    }
+}
