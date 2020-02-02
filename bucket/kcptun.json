@@ -1,19 +1,19 @@
 {
     "homepage": "https://github.com/xtaci/kcptun",
-    "version": "20200103",
+    "version": "20200201",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xtaci/kcptun/releases/download/v20200103/kcptun-windows-amd64-20200103.tar.gz",
-            "hash": "a97ca7fd5298e95e8752c617b0849e894ef21c96f5c492bb824a6c303881b081",
+            "url": "https://github.com/xtaci/kcptun/releases/download/v20200201/kcptun-windows-amd64-20200201.tar.gz",
+            "hash": "fca69f019b270d8e5ca77db0770eb83855ce34e8319e0fc401ad3753a593970d",
             "pre_install": [
                 "Rename-Item \"$dir\\server_windows_amd64.exe\" kcptun-server.exe",
                 "Rename-Item \"$dir\\client_windows_amd64.exe\" kcptun-client.exe"
             ]
         },
         "32bit": {
-            "url": "https://github.com/xtaci/kcptun/releases/download/v20200103/kcptun-windows-386-20200103.tar.gz",
-            "hash": "99acc8299f26b4a18053e69da239939b9cfdf2f125e3d9342f0aa228288ba2e2",
+            "url": "https://github.com/xtaci/kcptun/releases/download/v20200201/kcptun-windows-386-20200201.tar.gz",
+            "hash": "2dce9f239638c35c06c20dc6feebcd0a503995aa8a5275e0d72198fb9269dddf",
             "pre_install": [
                 "Rename-Item \"$dir\\server_windows_386.exe\" kcptun-server.exe",
                 "Rename-Item \"$dir\\client_windows_386.exe\" kcptun-client.exe"
