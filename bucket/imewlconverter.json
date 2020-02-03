@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/studyzy/imewlconverter",
-    "version": "2.6",
+    "version": "2.7.0",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/studyzy/imewlconverter/releases/download/V2.6/Release_V2.6_Windows.zip",
-    "hash": "2202d6f0333cd738c208132d4e3b7f3d6be072f99f06c50f55cefc91ed119757",
+    "url": "https://github.com/studyzy/imewlconverter/releases/download/v2.7.0/imewlconverter_Windows.zip",
+    "hash": "aefddb6f01c1d2cbae1e74ba86d277e4a678028909dca7a85df0f41409281e46",
     "shortcuts": [
         [
             "深蓝词库转换.exe",
@@ -14,6 +14,6 @@
         "github": "https://github.com/studyzy/imewlconverter"
     },
     "autoupdate": {
-        "url": "https://github.com/studyzy/imewlconverter/releases/download/V$version/Release_V$version_Windows.zip"
+        "url": "https://github.com/studyzy/imewlconverter/releases/download/v$version/imewlconverter_Windows.zip"
     }
 }
