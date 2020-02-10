@@ -1,0 +1,29 @@
+{
+    "homepage": "https://www.freetype.org/ttfautohint/",
+    "version": "1.8.3",
+    "license": "FTL",
+    "url": [
+        "https://downloads.sourceforge.net/project/freetype/ttfautohint/1.8.3/ttfautohint-1.8.3-win32.7z",
+        "https://www.freetype.org/image/favicon_60.ico"
+    ],
+    "hash": [
+        "sha1:e99eab074530929e5b60f60774ab1e05fdc87064",
+        "21B1155C3E57D64DA3A0A77BCCB60288C68833D1D4608E989C703CCF99137F7C"
+    ],
+    "bin": "ttfautohint.exe",
+    "shortcuts": [
+        [
+            "ttfautohintGUI.exe",
+            "TTFautohint",
+            "",
+            "favicon_60.ico"
+        ]
+    ],
+    "checkver": {
+        "url": "https://sourceforge.net/projects/freetype/rss?path=/ttfautohint/",
+        "regex": "/ttfautohint/(?<version>[\\d.]+)/ttfautohint-(?<suffix>[\\d.]+)-win32.7z"
+    },
+    "autoupdate": {
+        "url": "https://downloads.sourceforge.net/project/freetype/ttfautohint/$version/ttfautohint-$matchSuffix-win32.7z"
+    }
+}
