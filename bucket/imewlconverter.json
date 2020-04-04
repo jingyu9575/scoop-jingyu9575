@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/studyzy/imewlconverter",
-    "version": "2.7.0",
+    "version": "2.8.0",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/studyzy/imewlconverter/releases/download/v2.7.0/imewlconverter_Windows.zip",
-    "hash": "aefddb6f01c1d2cbae1e74ba86d277e4a678028909dca7a85df0f41409281e46",
+    "url": "https://github.com/studyzy/imewlconverter/releases/download/v2.8.0/imewlconverter_Windows.zip",
+    "hash": "f5ed54cbd5b9ced0058fa059bc500213e2132b888fe9fb874f1feebe2e546352",
     "shortcuts": [
         [
             "深蓝词库转换.exe",
