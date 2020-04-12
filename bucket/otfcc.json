@@ -1,16 +1,16 @@
 {
     "homepage": "https://github.com/caryll/otfcc",
-    "version": "0.10.3-alpha",
+    "version": "0.10.4",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/caryll/otfcc/releases/download/v0.10.3-alpha/otfcc-win64-0.10.3.zip",
-            "hash": "ebef826d00d3a2ad69e344ebd00cac2d845fb1e8f7a049f6021f2be1e1056d0d",
+            "url": "https://github.com/caryll/otfcc/releases/download/v0.10.4/otfcc-win64-0.10.4.zip",
+            "hash": "9f16afc1bae978ee8ba0566cf1b9cbf11c50cea87b5a648c47864716e4075fa0",
             "extract_dir": "release-x64"
         },
         "32bit": {
-            "url": "https://github.com/caryll/otfcc/releases/download/v0.10.3-alpha/otfcc-win32-0.10.3.zip",
-            "hash": "009d6fa25d9bbdb0a4328dc222efb6c05e0b88d77770c5f757308e2ff4c26d52",
+            "url": "https://github.com/caryll/otfcc/releases/download/v0.10.4/otfcc-win32-0.10.4.zip",
+            "hash": "28f6513c717a7f5c31c5689aa32ed1cf56a406248d34b81fdaad44cd78fac611",
             "extract_dir": "release-x86"
         }
     },
