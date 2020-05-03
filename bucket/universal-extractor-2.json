@@ -3,7 +3,7 @@
     "version": "2.0.0-rc.2",
     "license": "GPL-2.0-only",
     "url": "https://github.com/Bioruebe/UniExtract2/releases/download/v2.0.0-rc.2/UniExtractRC2.zip",
-    "hash": "c0b36042e8cd4f2169c7da1998e46c020c6578077b468d253312f010ffda3868",
+    "hash": "4ad412f2df056eb5cdf60078550d47c10fbbb67188aa915752d2757d95f1393b",
     "extract_dir": "UniExtract",
     "bin": "UniExtract.exe",
     "shortcuts": [
