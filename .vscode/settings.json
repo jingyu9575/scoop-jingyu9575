@@ -4,7 +4,7 @@
 			"fileMatch": [
 				"bucket/*.json"
 			],
-			"url": "../../apps/scoop/current/schema.json"
+			"url": "./schema.json"
 		}
 	]
 }
