@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/vslavik/poedit",
-    "version": "2.3.1",
+    "version": "2.4",
     "license": "GPL-3.0-or-later",
-    "url": "https://github.com/jingyu9575/poedit-oss-unofficial/releases/download/v2.3.1-oss/poedit-oss-unofficial.zip",
-    "hash": "bd624d338abf5e687b03c19e5826b78928b668bd5179c0e784e76626361f22fd",
+    "url": "https://github.com/jingyu9575/poedit-oss-unofficial/releases/download/v2.4-oss/poedit-oss-unofficial.zip",
+    "hash": "c5a521004d997cc98f80fd40345022d4116b6aa9d4d592f8565f5039b5cde330",
     "shortcuts": [
         [
             "Poedit.exe",
