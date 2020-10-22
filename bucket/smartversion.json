@@ -1,19 +1,19 @@
 {
-    "version": "37",
-    "homepage": "http://smartversion.com/",
+    "version": "38",
+    "homepage": "https://smartversion.com/",
     "license": {
         "identifier": "Shareware",
-        "url": "http://smartversion.com/order.htm"
+        "url": "https://smartversion.com/order.htm"
     },
     "notes": "SmartVersion is shareware; must be registered or reset after 30 days.",
     "architecture": {
         "64bit": {
-            "url": "http://www.smartversion.com/smartvs37_x64.zip",
-            "hash": "8286bf48bddf54d1a686c87c8570dd93d39af332b58bb009a0828fcf7aa16e81"
+            "url": "https://www.smartversion.com/smartvs38_x64.zip",
+            "hash": "8b0d3dd3d65866a338d2ceaf444ddec32452d9b1e8782699ab6a6f4947055b60"
         },
         "32bit": {
-            "url": "http://www.smartversion.com/smartvs37.zip",
-            "hash": "1a763be725fc39d59179bc6730461cd42f111d2a448c4a4056c4742f69dacb39"
+            "url": "https://www.smartversion.com/smartvs38.zip",
+            "hash": "2d074195c50937dc75d0b72b28cf399e80ad05426f14c1291c746a15a18851ae"
         }
     },
     "bin": "smv.exe",
@@ -24,16 +24,16 @@
         ]
     ],
     "checkver": {
-        "url": "http://smartversion.com/download.htm",
-        "regex": "http://www.smartversion.com/smartvs([\\d\\.]+).zip"
+        "url": "https://smartversion.com/download.htm",
+        "regex": "https://www.smartversion.com/smartvs([\\d\\.]+).zip"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.smartversion.com/smartvs$version_x64.zip"
+                "url": "https://www.smartversion.com/smartvs$version_x64.zip"
             },
             "32bit": {
-                "url": "http://www.smartversion.com/smartvs$version.zip"
+                "url": "https://www.smartversion.com/smartvs$version.zip"
             }
         }
     }
