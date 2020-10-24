@@ -1,16 +1,16 @@
 {
     "homepage": "https://github.com/wangyu-/udp2raw-multiplatform",
-    "version": "20190407.0",
+    "version": "20200727.0",
     "license": "MIT",
-    "url": "https://github.com/wangyu-/udp2raw-multiplatform/releases/download/20190407.0/udp2raw_windows.zip",
-    "hash": "78846f3dcfc46f5f5a3c767eb017a178b54b514c4b9c6f3161a2d9d080b63408",
-    "pre_install": "Rename-Item \"$dir\\udp2raw_mp_nolibnet.exe\" udp2raw.exe",
+    "url": "https://github.com/wangyu-/udp2raw-multiplatform/releases/download/20200727.0/udp2raw_mp_binaries.tar.gz",
+    "hash": "9788738616fbc71905496607f15761e9879ca49b930d5504b486a8008aba1eb7",
+    "pre_install": "Rename-Item \"$dir\\udp2raw_mp.exe\" udp2raw.exe",
     "bin": "udp2raw.exe",
     "checkver": {
         "url": "https://github.com/wangyu-/udp2raw-multiplatform/releases/",
         "regex": "/releases/tag/(?:v|V)?([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/wangyu-/udp2raw-multiplatform/releases/download/$version/udp2raw_windows.zip"
+        "url": "https://github.com/wangyu-/udp2raw-multiplatform/releases/download/$version/udp2raw_mp_binaries.tar.gz"
     }
 }
