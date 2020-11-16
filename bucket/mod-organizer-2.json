@@ -1,0 +1,19 @@
+{
+    "homepage": "https://www.nexusmods.com/skyrimspecialedition/mods/6194",
+    "version": "2.3.2",
+    "license": "MIT",
+    "url": "https://github.com/ModOrganizer2/modorganizer/releases/download/v2.3.2/Mod.Organizer-2.3.2.7z",
+    "hash": "a81ea1ad22b66c492de4d8f154dc40a134bb35a93be3ebacccae35c592827d29",
+    "checkver": {
+        "github": "https://github.com/Modorganizer2/modorganizer/"
+    },
+    "shortcuts": [
+        [
+            "ModOrganizer.exe",
+            "Mod Organizer 2"
+        ]
+    ],
+    "autoupdate": {
+        "url": "https://github.com/ModOrganizer2/modorganizer/releases/download/v$version/Mod.Organizer-$version.7z"
+    }
+}
