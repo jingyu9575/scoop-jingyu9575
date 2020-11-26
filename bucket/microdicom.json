@@ -5,11 +5,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.microdicom.com/downloads/Software/microdicom-3.8.1-x64.zip",
-            "hash": "594892a800d1e6286723de85926d5f7f7bf900c7e7655ebe0260f056d53f5713"
+            "hash": "668114a3b72f71a866ae34c2c643f6a859262d8176df035fbf829574ea122ac2"
         },
         "32bit": {
             "url": "https://www.microdicom.com/downloads/Software/microdicom-3.8.1-win32.zip",
-            "hash": "e15e47d413e1cf2582ed75f438363c5e75a9a54fe32f808e0bbc862edc577482"
+            "hash": "fc712bb2b4f4c0174f01186457b900a5ff9e9c591daca7158b1c4fac8e25f8ba"
         }
     },
     "shortcuts": [
