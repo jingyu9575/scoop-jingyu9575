@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/wangyu-/udp2raw-multiplatform",
-    "version": "20200727.0",
+    "version": "20210111.0",
     "license": "MIT",
-    "url": "https://github.com/wangyu-/udp2raw-multiplatform/releases/download/20200727.0/udp2raw_mp_binaries.tar.gz",
-    "hash": "9788738616fbc71905496607f15761e9879ca49b930d5504b486a8008aba1eb7",
+    "url": "https://github.com/wangyu-/udp2raw-multiplatform/releases/download/20210111.0/udp2raw_mp_binaries.tar.gz",
+    "hash": "e68958f201dbf5c51fc59cd5437d129a974ed0e664db371d5fd0c7ea8363e1be",
     "pre_install": "Rename-Item \"$dir\\udp2raw_mp.exe\" udp2raw.exe",
     "bin": "udp2raw.exe",
     "checkver": {
