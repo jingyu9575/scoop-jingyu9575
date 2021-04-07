@@ -1,15 +1,15 @@
 {
     "homepage": "https://www.clamav.net/",
-    "version": "0.103.1",
+    "version": "0.103.2",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://www.clamav.net/downloads/production/clamav-0.103.1-win-x64-portable.zip",
-            "hash": "cf7c055015f970aa90d5b08ec7c941798bb5e159eab5abc18f239a2595b0dac0"
+            "url": "https://www.clamav.net/downloads/production/clamav-0.103.2-win-x64-portable.zip",
+            "hash": "fdcac657f6abae14a200ce1504a05927d8a74ca99dbb3e6b2fe52e2b71ad4788"
         },
         "32bit": {
-            "url": "https://www.clamav.net/downloads/production/clamav-0.103.1-win-x86-portable.zip",
-            "hash": "3e3df95b5adef706d0ffc58a892b2d096eef8f4933ebf5f0735e1c19ada53ed8"
+            "url": "https://www.clamav.net/downloads/production/clamav-0.103.2-win-x86-portable.zip",
+            "hash": "929b9d2468ec92d954cf2a1983261a8243629df3555b79ca011008fb15e4b083"
         }
     },
     "pre_install": "'clamd', 'freshclam' | % { (Get-Content \"$dir\\conf_examples\\$_.conf.sample\") -replace '^\\s*Example\\b', '#$0' -replace '$', \"`n\" -join '' | Set-Content -NoNewline -Encoding Ascii \"$dir\\$_.conf\" }",
