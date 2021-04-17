@@ -9,11 +9,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.smartversion.com/smartvs382_x64.zip",
-            "hash": "f728037bf0969afc86ab507a61ac5ac87876ebbc1b46dafd8e3dc6525cbf9081"
+            "hash": "517591687410c305a6015d0fa49f822efdaecdf8c5a4172d3feca82db587251f"
         },
         "32bit": {
             "url": "https://www.smartversion.com/smartvs382.zip",
-            "hash": "40ffbd62a2e788536d3125154452326dfb24c6d2b867b5cf346ac6597f4896d2"
+            "hash": "ba809d98e931c7d5b0a712a69b99873643342a38d82268db00f25fa4f606b3fa"
         }
     },
     "bin": "smv.exe",
