@@ -2,29 +2,29 @@
     "homepage": "https://www.python.org/",
     "description": "A programming language that lets you work quickly and integrate systems more effectively.",
     "license": "Python-2.0",
-    "version": "3.8.9",
+    "version": "3.8.10",
     "notes": "Allow applications and third-party installers to find python by running: \"$dir\\install-pep-514.reg\"",
     "architecture": {
         "64bit": {
             "url": [
-                "https://www.python.org/ftp/python/3.8.9/python-3.8.9-amd64.exe#/setup.exe",
+                "https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe#/setup.exe",
                 "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/install-pep-514.reg",
                 "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/uninstall-pep-514.reg"
             ],
             "hash": [
-                "md5:4f973848788a5d09a1225f27b18bd305",
+                "md5:62cf1a12a5276b0259e8761d4cf4fe42",
                 "5d9d7a604c057e67973e1d4b3b488ae20a0e5ee5496d03b5cf091410e33e39ed",
                 "d9309423b693ed63aea6b1fbfc0c34f16842cdca22a1b3edef283b87567a53b9"
             ]
         },
         "32bit": {
             "url": [
-                "https://www.python.org/ftp/python/3.8.9/python-3.8.9.exe#/setup.exe",
+                "https://www.python.org/ftp/python/3.8.10/python-3.8.10.exe#/setup.exe",
                 "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/install-pep-514.reg",
                 "https://raw.githubusercontent.com/ScoopInstaller/Main/master/scripts/python/uninstall-pep-514.reg"
             ],
             "hash": [
-                "md5:e3b00b7f4782e50dad4adcf81b103ce6",
+                "md5:b355cfc84b681ace8908ae50908e8761",
                 "5d9d7a604c057e67973e1d4b3b488ae20a0e5ee5496d03b5cf091410e33e39ed",
                 "d9309423b693ed63aea6b1fbfc0c34f16842cdca22a1b3edef283b87567a53b9"
             ]
