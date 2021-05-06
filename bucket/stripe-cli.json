@@ -1,0 +1,29 @@
+{
+    "version": "1.5.14",
+    "homepage": "https://stripe.com",
+    "license": "Apache-2.0",
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/stripe/stripe-cli/releases/download/v1.5.14/stripe_1.5.14_windows_i386.zip",
+            "hash": "5d90bb9f822ba18b7c3d84b9282b291148f386c1a08f6055df3b22850d872a09"
+        },
+        "64bit": {
+            "url": "https://github.com/stripe/stripe-cli/releases/download/v1.5.14/stripe_1.5.14_windows_x86_64.zip",
+            "hash": "c4d344b486e35badd6475c672eee9f6998455c020bf59c691802d452adc79f94"
+        }
+    },
+    "bin": "stripe.exe",
+    "checkver": {
+        "github": "https://github.com/stripe/stripe-cli"
+    },
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://github.com/stripe/stripe-cli/releases/download/v$version/stripe_$version_windows_i386.zip"
+            },
+            "64bit": {
+                "url": "https://github.com/stripe/stripe-cli/releases/download/v1.5.14/stripe_$version_windows_x86_64.zip"
+            }
+        }
+    }
+}
