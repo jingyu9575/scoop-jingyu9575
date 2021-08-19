@@ -1,13 +1,13 @@
 {
     "homepage": "https://bytecodeviewer.com/",
-    "version": "2.10.15",
+    "version": "2.10.16",
     "license": "GPL-3.0-only",
     "url": [
-        "https://github.com/Konloch/bytecode-viewer/releases/download/v2.10.15/Bytecode-Viewer-2.10.15.jar#/bytecode-viewer.jar",
+        "https://github.com/Konloch/bytecode-viewer/releases/download/v2.10.16/Bytecode-Viewer-2.10.16.jar#/bytecode-viewer.jar",
         "https://raw.githubusercontent.com/Konloch/bytecode-viewer/3c459fa86033af7d18d8a68b4c4c1fb3807c74b6/BCV%20Icon.ico#/bytecode-viewer.ico"
     ],
     "hash": [
-        "44c0f5cfef5810ee53bcb8ba0809ef7da4a1b6db88a91d0194ed7176683e9c79",
+        "75a4144ef351334a4c29d55c88111412b1202bef61cc7fd3223ac9569c3bc3ad",
         "8e16053d3061109c40587c9dfdb7f63229487c90b2a23717c19d0d04b61698ee"
     ],
     "pre_install": "Set-Content \"$dir\\bytecode-viewer.bat\" (@('@echo off', 'start javaw.exe -jar %~dp0\\bytecode-viewer.jar %*') -join \"`r`n\") -Encoding Ascii",
