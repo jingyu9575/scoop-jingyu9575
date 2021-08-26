@@ -1,11 +1,11 @@
 {
     "homepage": "https://github.com/z4yx/GoAuthing/",
-    "version": "2.1.2",
+    "version": "2.2",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://mirrors.tuna.tsinghua.edu.cn/github-release/z4yx/GoAuthing/v2.1.2/auth-thu.win64.exe#/auth-thu.exe",
-            "hash": "2fc2217b0b5e56d4ba6cdf0a231a3ba9d9060e5dfbaef454485732b1b3f6dbd3"
+            "url": "https://mirrors.tuna.tsinghua.edu.cn/github-release/z4yx/GoAuthing/v2.2/auth-thu.win64.exe#/auth-thu.exe",
+            "hash": "2af1131db3d6bde92693037252999373171385a06268c0871e2fc48043b6bff7"
         }
     },
     "bin": "auth-thu.exe",
