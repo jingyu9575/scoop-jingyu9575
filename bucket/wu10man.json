@@ -1,0 +1,19 @@
+{
+    "homepage": "https://github.com/WereDev/Wu10Man",
+    "version": "4.3.0",
+    "license": "GPL-3.0-only",
+    "url": "https://github.com/WereDev/Wu10Man/releases/download/v4.3.0/Wu10Man_Portable.zip",
+    "hash": "7f4cc559143fd003456a3a186c6dcf5062593119a56e89b863421dbbfbd1c606",
+    "shortcuts": [
+        [
+            "Wu10Man.exe",
+            "Wu10Man"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/WereDev/Wu10Man"
+    },
+    "autoupdate": {
+        "url": "https://github.com/WereDev/Wu10Man/releases/download/v$version/Wu10Man_Portable.zip"
+    }
+}
