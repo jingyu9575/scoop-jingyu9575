@@ -5,23 +5,23 @@
     "architecture": {
         "64bit": {
             "url": "http://download.microsoft.com/download/7/1/0/7105C7FF-768E-4472-AFD5-F29108D1E383/NM34_x64.exe#/dl.7z",
-            "hash": "ab0b46acc1439077d801356fc5ac5af5f05349db249e87f1afede9e69edf7cf6"
+            "hash": "3a443055a478384ddd184c39a7b1acea9f213719d26e93204f782cb14dfb562a"
         },
         "32bit": {
             "url": "http://download.microsoft.com/download/7/1/0/7105C7FF-768E-4472-AFD5-F29108D1E383/NM34_x86.exe#/dl.7z",
-            "hash": "890e0d04f2028b9b74b2073baa7eccbe5810c6608e9ce647ed4310ed8e138156"
+            "hash": "5069036b115b683c02d370817be901c533bef5b7e2047351f49aca3164739c5f"
         }
     },
     "installer": {
         "script": [
-            "msiexec /qn /i \"$dir\\netmon.msi\" INSTALLDIR=\"$dir\" BUILDPROFILES=No | Out-Default",
-            "msiexec /qn /i \"$dir\\NetworkMonitor_Parsers.msi\" | Out-Default"
+            "msiexec /qb /i \"$dir\\netmon.msi\" INSTALLDIR=\"$dir\" BUILDPROFILES=No | Out-Default",
+            "msiexec /qb /i \"$dir\\NetworkMonitor_Parsers.msi\" | Out-Default"
         ]
     },
     "uninstaller": {
         "script": [
-            "msiexec /qn /x \"$dir\\netmon.msi\" | Out-Default",
-            "msiexec /qn /x \"$dir\\NetworkMonitor_Parsers.msi\" | Out-Default"
+            "msiexec /qb /x \"$dir\\netmon.msi\" | Out-Default",
+            "msiexec /qb /x \"$dir\\NetworkMonitor_Parsers.msi\" | Out-Default"
         ]
     }
 }
