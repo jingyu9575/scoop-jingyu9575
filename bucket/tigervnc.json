@@ -1,15 +1,15 @@
 {
     "homepage": "https://tigervnc.org/",
-    "version": "1.11.0",
+    "version": "1.12.0",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://bintray.com/tigervnc/stable/download_file?file_path=tigervnc64-1.11.0.exe",
-            "hash": "90cd96b5fbaf43a73fe84924af259a641986e35a06b776d0e0158879727551c6"
+            "url": "https://downloads.sourceforge.net/project/tigervnc/stable/1.12.0/tigervnc64-1.12.0.exe",
+            "hash": "sha1:58b1b11ba442f071ab7d93e097dffae004abf317"
         },
         "32bit": {
-            "url": "https://bintray.com/tigervnc/stable/download_file?file_path=tigervnc-1.11.0.exe",
-            "hash": "2edb1f86534eff88b5554b92a06cf2bd4c1e738894ff03a921284813b4a7b611"
+            "url": "https://downloads.sourceforge.net/project/tigervnc/stable/1.12.0/tigervnc-1.12.0.exe",
+            "hash": "sha1:bea7144716a1922efd6b7384b7670f028c683e1f"
         }
     },
     "innosetup": true,
@@ -20,16 +20,16 @@
         ]
     ],
     "checkver": {
-        "url": "https://api.bintray.com/packages/tigervnc/stable/tigervnc/",
-        "re": "\"latest_version\"\\s*:\\s*\"([\\d.]+)\""
+        "url": "https://sourceforge.net/projects/tigervnc/rss?path=/",
+        "regex": "/stable/(?<version>[\\d.]+)/tigervnc64-(?<suffix>[\\d.]+).exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://bintray.com/tigervnc/stable/download_file?file_path=tigervnc64-$version.exe"
+                "url": "https://downloads.sourceforge.net/project/tigervnc/stable/$version/tigervnc64-$matchSuffix.exe"
             },
             "32bit": {
-                "url": "https://bintray.com/tigervnc/stable/download_file?file_path=tigervnc-$version.exe"
+                "url": "https://downloads.sourceforge.net/project/tigervnc/stable/$version/tigervnc-$matchSuffix.exe"
             }
         }
     }
