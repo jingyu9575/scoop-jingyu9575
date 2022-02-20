@@ -1,6 +1,7 @@
 on:
   schedule:
   - cron: '*/30 * * * *'
+  workflow_dispatch:
 name: Excavator
 jobs:
   excavate:
@@ -8,9 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Excavate
-      uses: Ash258/Scoop-GithubActions@stable
+    - run: |
+        git clone https://github.com/jingyu9575/scoop.git
+        git config --global user.name AutoUpdate
+        git config --global user.email autoupdate@qw.thucfb.com
+        ./scoop/bin/auto-pr.ps1 -Dir bucket -Upstream "https://${env:GITHUB_ACTOR}:$env:GITHUB_TOKEN@github.com/$env:GITHUB_REPOSITORY.git:master" -Push -SkipUpdated
+      shell: pwsh
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SKIP_UPDATED: '1'
-        GITH_EMAIL: autoupdate@qw.thucfb.com
