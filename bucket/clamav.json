@@ -1,15 +1,17 @@
 {
     "homepage": "https://www.clamav.net/",
-    "version": "0.103.3",
+    "version": "0.104.2",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://www.clamav.net/downloads/production/clamav-0.103.3-win-x64-portable.zip",
-            "hash": "664845227fe465d736569b2912603d6e133a23e28c80f0035c3be52ca27fdc95"
+            "url": "https://www.clamav.net/downloads/production/clamav-0.104.2.win.x64.zip",
+            "hash": "c4b2dd705af062c632e750fc8d61fca16ebd2bc2ba7acfa4ce6ab08b08832790",
+            "extract_dir": "clamav-0.104.2.win.x64"
         },
         "32bit": {
-            "url": "https://www.clamav.net/downloads/production/clamav-0.103.3-win-x86-portable.zip",
-            "hash": "6a226a868b90c38d2a5648bffc505a257a648c1c3b74e6d14920f5c0af5b7932"
+            "url": "https://www.clamav.net/downloads/production/clamav-0.104.2.win.win32.zip",
+            "hash": "5fc888c58a5f4d720d044870b3d7b0e5b8c2052758d5a0d3d5534d38beec0260",
+            "extract_dir": "clamav-0.104.2.win.win32"
         }
     },
     "pre_install": "'clamd', 'freshclam' | % { (Get-Content \"$dir\\conf_examples\\$_.conf.sample\") -replace '^\\s*Example\\b', '#$0' -replace '$', \"`n\" -join '' | Set-Content -NoNewline -Encoding Ascii \"$dir\\$_.conf\" }",
@@ -29,15 +31,17 @@
     ],
     "checkver": {
         "url": "https://www.clamav.net/downloads",
-        "re": "\\b/clamav-([\\d.]+)-win-x64-portable.zip\\b"
+        "re": "\\b/clamav-([\\d.]+).win.x64.zip\\b"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://www.clamav.net/downloads/production/clamav-$version-win-x64-portable.zip"
+                "url": "https://www.clamav.net/downloads/production/clamav-$version.win.x64.zip",
+                "extract_dir": "clamav-$version.win.x64"
             },
             "32bit": {
-                "url": "https://www.clamav.net/downloads/production/clamav-$version-win-x86-portable.zip"
+                "url": "https://www.clamav.net/downloads/production/clamav-$version.win.win32.zip",
+                "extract_dir": "clamav-$version.win.win32"
             }
         }
     }
