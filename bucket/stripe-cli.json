@@ -1,15 +1,15 @@
 {
-    "version": "1.8.5",
+    "version": "1.8.6",
     "homepage": "https://stripe.com",
     "license": "Apache-2.0",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/stripe/stripe-cli/releases/download/v1.8.5/stripe_1.8.5_windows_i386.zip",
-            "hash": "7924c7479a1debaaa94f5e4ed1d07b8ae2517bf58867ba7206891d14cd6f3e87"
+            "url": "https://github.com/stripe/stripe-cli/releases/download/v1.8.6/stripe_1.8.6_windows_i386.zip",
+            "hash": "ffe130c1665ac727892e68605bcade5300121b348d212841f7ae2757d690203e"
         },
         "64bit": {
-            "url": "https://github.com/stripe/stripe-cli/releases/download/v1.8.5/stripe_1.8.5_windows_x86_64.zip",
-            "hash": "53e27ec5b9be71dd0833ccfc2f808360c0d2940d64fc02c145c6310edc48dced"
+            "url": "https://github.com/stripe/stripe-cli/releases/download/v1.8.6/stripe_1.8.6_windows_x86_64.zip",
+            "hash": "3ff5ebdca5aee048522a1e914f620e667b2b8ef23b83f6e14bb417eec9350d5b"
         }
     },
     "bin": "stripe.exe",
