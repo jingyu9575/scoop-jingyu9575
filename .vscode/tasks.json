@@ -16,6 +16,16 @@
 			"problemMatcher": []
 		},
 		{
+			"label": "Install",
+			"type": "shell",
+			"command": "scoop",
+			"args": [
+				"install",
+				"${fileBasenameNoExtension}",
+			],
+			"problemMatcher": []
+		},
+		{
 			"label": "Uninstall",
 			"type": "shell",
 			"command": "scoop",
