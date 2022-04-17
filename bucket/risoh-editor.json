@@ -12,6 +12,7 @@
         ]
     ],
     "pre_install": "if (!(Test-Path \"$persist_dir\\RisohEditorPortable.ini\")) { New-Item \"$dir\\RisohEditorPortable.ini\" | Out-Null }",
+    "persist": "RisohEditorPortable.ini",
     "checkver": {
         "github": "https://github.com/katahiromz/RisohEditor"
     },
