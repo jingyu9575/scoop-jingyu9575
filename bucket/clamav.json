@@ -1,17 +1,17 @@
 {
     "homepage": "https://www.clamav.net/",
-    "version": "0.105.0",
+    "version": "0.105.1",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://www.clamav.net/downloads/production/clamav-0.105.0.win.x64.zip",
-            "hash": "9a6808bf7f94cf9ae43811b8d65f89b10a05283a8664f10a73d377fb5a95e7e1",
-            "extract_dir": "clamav-0.105.0.win.x64"
+            "url": "https://www.clamav.net/downloads/production/clamav-0.105.1.win.x64.zip",
+            "hash": "d5d58a8a46c4e355ac382cb3280096c991ea5e872bcadb28d8a4afc42d2dca89",
+            "extract_dir": "clamav-0.105.1.win.x64"
         },
         "32bit": {
-            "url": "https://www.clamav.net/downloads/production/clamav-0.105.0.win.win32.zip",
-            "hash": "d880a45ec4a9946dc2b7e7009f20892a5ea70de8ff16ce7042ea400972e8dbc5",
-            "extract_dir": "clamav-0.105.0.win.win32"
+            "url": "https://www.clamav.net/downloads/production/clamav-0.105.1.win.win32.zip",
+            "hash": "3465276d6a1fe758f6ce3025e537778c394172b72fb84228ca93624a99c0cb03",
+            "extract_dir": "clamav-0.105.1.win.win32"
         }
     },
     "pre_install": "'clamd', 'freshclam' | % { (Get-Content \"$dir\\conf_examples\\$_.conf.sample\") -replace '^\\s*Example\\b', '#$0' -replace '$', \"`n\" -join '' | Set-Content -NoNewline -Encoding Ascii \"$dir\\$_.conf\" }",
