@@ -1,9 +1,9 @@
 {
     "homepage": "https://open-shell.github.io/Open-Shell-Menu/",
-    "version": "4.4.8",
+    "version": "4.4.170",
     "license": "MIT",
-    "url": "https://github.com/Open-Shell/Open-Shell-Menu/releases/download/v4.4.8/OpenShellSetup_4_4_8.exe#/OpenShellSetup.exe",
-    "hash": "6ef4bec4e8fb96ed84f54f69034d235c2b3132882477c93d301ab24e58ff1469",
+    "url": "https://github.com/Open-Shell/Open-Shell-Menu/releases/download/v4.4.170/OpenShellSetup_4_4_170.exe#/OpenShellSetup.exe",
+    "hash": "0417041cffed3478f13a840e45ee304ccf8d1f9ca38e4126bc315161ac9f1669",
     "installer": {
         "args": [
             "/qn",
