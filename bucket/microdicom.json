@@ -1,15 +1,15 @@
 {
     "homepage": "https://www.microdicom.com/",
-    "version": "4.0.0",
+    "version": "2022.3",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://www.microdicom.com/downloads/Software/microdicom-4.0.0-x64.zip",
-            "hash": "76f03e3cd7d31b7218d86570d0776edf4764e91e28a4362f0089e9b64baf55e0"
+            "url": "https://www.microdicom.com/downloads/Software/microdicom-2022.3-x64.zip",
+            "hash": "859ecfdd7a10ff0ac14e5132a4b17a1280ebe0b6f39604bd9f7ec84445f4de49"
         },
         "32bit": {
-            "url": "https://www.microdicom.com/downloads/Software/microdicom-4.0.0-win32.zip",
-            "hash": "27da7b2fc0e91d789061889f506099605517fc497ed1b2b34c8a897e212de9c7"
+            "url": "https://www.microdicom.com/downloads/Software/microdicom-2022.3-win32.zip",
+            "hash": "b6da8d23047e9ae0b5576963cc3bc43b95a1981edc2c0fb2593112a7618bef09"
         }
     },
     "shortcuts": [
