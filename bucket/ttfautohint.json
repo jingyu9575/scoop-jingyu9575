@@ -1,13 +1,13 @@
 {
     "homepage": "https://www.freetype.org/ttfautohint/",
-    "version": "1.8.3",
+    "version": "1.8.4",
     "license": "FTL",
     "url": [
-        "https://downloads.sourceforge.net/project/freetype/ttfautohint/1.8.3/ttfautohint-1.8.3-win32.7z",
+        "https://downloads.sourceforge.net/project/freetype/ttfautohint/1.8.4/ttfautohint-1.8.4-win32.7z",
         "https://www.freetype.org/image/favicon_60.ico"
     ],
     "hash": [
-        "e0f7d349bd4ed5fc1c2596635d92feba2b59ef0c6c7b7e17245832c92eb4cd60",
+        "82e8025e1fbfa1a2f605b820847f80976844ce845e4dc65c1a09a21e4ce57f08",
         "21B1155C3E57D64DA3A0A77BCCB60288C68833D1D4608E989C703CCF99137F7C"
     ],
     "bin": "ttfautohint.exe",
